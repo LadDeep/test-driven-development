@@ -1,3 +1,4 @@
+import org.example.RepeatedSubsequence;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
