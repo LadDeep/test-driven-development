@@ -9,6 +9,9 @@ public class RepeatedSubsequence {
     public boolean isRepeatedSubsequence(String str){
         final int DECIMAL = 10;
 
+        if(str.length()==0)
+            return false;
+
         Map<String, ArrayList<String>> subsequenceMap = new HashMap<>();
         for (int i = 0; i < str.length()-1; i++) {
             for (int j = i+1; j < str.length(); j++) {
