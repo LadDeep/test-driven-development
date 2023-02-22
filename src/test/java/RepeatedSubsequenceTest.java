@@ -6,16 +6,21 @@ import static org.junit.Assert.assertTrue;
 
 public class RepeatedSubsequenceTest {
 
+    RepeatedSubsequence repeatedSubsequence = new RepeatedSubsequence();
+
     @Test
     public void returnsTrue() {
-        RepeatedSubsequence repeatedSubsequence = new RepeatedSubsequence();
         assertTrue(repeatedSubsequence.isRepeatedSubsequence("abcab"));
     }
 
     @Test
     public void returnsFalse() {
-        RepeatedSubsequence repeatedSubsequence = new RepeatedSubsequence();
         assertFalse(repeatedSubsequence.isRepeatedSubsequence("aab"));
+    }
+
+    @Test
+    public void returnFalseIfEmpty() {
+        assertFalse(repeatedSubsequence.isRepeatedSubsequence(""));
     }
 
 }
