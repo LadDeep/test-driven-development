@@ -20,4 +20,19 @@ public class MatrixDiagonalSum {
         }
         return true;
     }
+
+    public double getSum(double[][] matrix) {
+        double sum = 0;
+        int matrixLength = matrix.length;
+        if(!isEmpty(matrix) && isSquare(matrix)) {
+            for (int i = 0; i < matrixLength; i++) {
+                for (int j = 0; j < matrix[i].length; j++) {
+                    if(i == j | j == matrixLength-i-1) {
+                        sum += matrix[i][j];
+                    }
+                }
+            }
+        }
+        return sum;
+    }
 }
