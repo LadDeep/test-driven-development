@@ -1,3 +1,4 @@
+import org.example.MatrixDiagonalSum;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
