@@ -26,6 +26,7 @@ public class MatrixDiagonalSumTest {
     public void testWhenMatrixSumIsTrue(){
         MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
         double [][]matrix={{1,2,4}, {3,4,6}, {3,4,6}};
-        assertEquals(17, matrixDiagonalSum.getSum(matrix));
+        double precision = 0.0001d;
+        assertEquals(18.0, matrixDiagonalSum.getSum(matrix), precision);
     }
 }
