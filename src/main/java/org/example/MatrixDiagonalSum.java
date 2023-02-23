@@ -8,4 +8,13 @@ public class MatrixDiagonalSum {
         }
         return false;
     }
+
+    public boolean isSquare(double[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            if(matrix[i].length != matrix.length) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
