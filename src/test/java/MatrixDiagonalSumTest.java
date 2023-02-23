@@ -29,4 +29,11 @@ public class MatrixDiagonalSumTest {
         double precision = 0.0001d;
         assertEquals(18.0, matrixDiagonalSum.getSum(matrix), precision);
     }
+    @Test
+    public void testWhenMatrixSumIsFalse(){
+        MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
+        double [][]matrix={{1,2,1}, {4,6,0}, {3,1,6}};
+        double precision = 0.0001d;
+        assertNotEquals(21.0, matrixDiagonalSum.getSum(matrix), precision);
+    }
 }
