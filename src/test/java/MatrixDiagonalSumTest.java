@@ -10,4 +10,10 @@ public class MatrixDiagonalSumTest {
         double [][]matrix={{}};
         assertTrue(matrixDiagonalSum.isEmpty(matrix));
     }
+    @Test
+    public void testWhenMatrixIsSquare(){
+        MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
+        double [][]matrix={{1,2,4}, {3,4,6}, {3,4,6}};
+        assertTrue(matrixDiagonalSum.isSquare(matrix));
+    }
 }
