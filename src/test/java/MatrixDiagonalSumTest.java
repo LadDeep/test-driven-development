@@ -1,8 +1,7 @@
 import org.example.MatrixDiagonalSum;
 import org.junit.Test;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 
 public class MatrixDiagonalSumTest {
     @Test
@@ -22,5 +21,11 @@ public class MatrixDiagonalSumTest {
         MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
         double [][]matrix={{1,2}, {3,4}};
         assertFalse(matrixDiagonalSum.isSquare(matrix));
+    }
+    @Test
+    public void testWhenMatrixSumIsTrue(){
+        MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
+        double [][]matrix={{1,2,4}, {3,4,6}, {3,4,6}};
+        assertEquals(17, matrixDiagonalSum.getSum(matrix));
     }
 }
