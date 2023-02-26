@@ -17,12 +17,6 @@ public class MatrixDiagonalSumTest {
         assertTrue(matrixDiagonalSum.isSquare(matrix));
     }
     @Test
-    public void testWhenMatrixIsOddSquare(){
-        MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
-        double [][]matrix={{1,2}, {3,4}};
-        assertFalse(matrixDiagonalSum.isSquare(matrix));
-    }
-    @Test
     public void testWhenMatrixSumIsTrue(){
         MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
         double [][]matrix={{1,2,4}, {3,4,6}, {3,4,6}};
